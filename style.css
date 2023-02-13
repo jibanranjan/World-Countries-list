@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+
+}
+.maincontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.search{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(./images/bg2.jpg);
+    
+
+}
+h1{
+    color: white;
+    font-size: 3rem;
+}
+h3{
+    color: white;
+}
+
+input{
+    width: 30%;
+    height: 15%;
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid gray;
+
+}
+
+.searchbuttons{
+    width: 40%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+button{
+    width: 40%;
+    height: 70%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+button:hover{
+    background-color: #8898ad;
+
+}
+.result{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#efefef ;
+    overflow-y: scroll;
+    
+
+}
+::-webkit-scrollbar {
+    display: scroll;
+}
+.resultdiv{
+    width: 15%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-image: url(./images/bg3.png);
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 5px gray;
+    color: navy;
+    text-shadow: 2px 0 white;
+
+
+
+}
+
+.alert{
+    width: 30%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 55, 55); 
+    color: black;
+    font-size: 1.2rem;
+
+}
+
+@media only screen and (max-width:480px){
+  
+    h1{
+        font-size: 1.6rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+
+    .searchbuttons{
+        width: 90%;
+        height: 15%;
+
+    }
+    button{
+        width: 40%;
+        height: 70%;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+    }
+    input{
+        width: 70%;
+    }
+    .result{
+        height: 60%;
+        flex-wrap: wrap;
+    }
+    .resultdiv{
+        width: 20%;
+        height: 30%;
+        margin: 1.2rem;
+        font-size: 1.2rem;
+    
+        color: black;
+        text-shadow: 3px 0 #DBEDF3;
+    
+    
+    
+    }
+  
+
+}
+
+@media only screen and (min-width:481px) and (max-width:786px){
+    h1{
+        font-size: 1.6rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+
+    .searchbuttons{
+        width: 70%;
+        height: 15%;
+
+    }
+    button{
+        width: 40%;
+        height: 70%;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+    }
+    input{
+        width: 60%;
+        height: 8%;
+    }
+    .result{
+        height: 60%;
+        flex-wrap: wrap;
+    }
+    .resultdiv{
+        width: 20%;
+        height: 30%;
+        margin: 1.2rem;
+        font-size: 1.2rem;
+    
+        color: black;
+        text-shadow: 3px 0 #DBEDF3;
+    
+    
+    
+    }
+  
+
+}
